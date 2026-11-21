@@ -1,0 +1,54 @@
+{
+  "random_seed": 42,
+  "test_size": 0.2,
+  "cv_folds": 5,
+  "selection_metric": "roc_auc",
+  "cross_validation": [
+    {
+      "model_name": "Extra Trees",
+      "roc_auc": 0.7602455357142858,
+      "accuracy": 0.75375,
+      "precision": 0.7885532591414944,
+      "recall": 0.8857142857142857,
+      "f1": 0.8343145500420521
+    },
+    {
+      "model_name": "Gradient Boosting (depth 1)",
+      "roc_auc": 0.7474330357142858,
+      "accuracy": 0.72125,
+      "precision": 0.7350069735006973,
+      "recall": 0.9410714285714286,
+      "f1": 0.8253719655442443
+    },
+    {
+      "model_name": "Gradient Boosting (depth 2)",
+      "roc_auc": 0.7634784226190476,
+      "accuracy": 0.74,
+      "precision": 0.7642642642642643,
+      "recall": 0.9089285714285714,
+      "f1": 0.8303425774877651
+    },
+    {
+      "model_name": "MLP (8 neurons)",
+      "roc_auc": 0.7575558035714285,
+      "accuracy": 0.75125,
+      "precision": 0.7944535073409462,
+      "recall": 0.8696428571428572,
+      "f1": 0.8303495311167945
+    },
+    {
+      "model_name": "Soft Voting (GB + MLP)",
+      "roc_auc": 0.7680729166666667,
+      "accuracy": 0.74375,
+      "precision": 0.7677224736048266,
+      "recall": 0.9089285714285714,
+      "f1": 0.8323793949304987
+    }
+  ],
+  "model_name": "Soft Voting (GB + MLP)",
+  "roc_auc": 0.824047619047619,
+  "accuracy": 0.78,
+  "precision": 0.7962962962962963,
+  "recall": 0.9214285714285714,
+  "f1": 0.8543046357615894
+}
